@@ -41,7 +41,7 @@ The dataset is a cleaned version of real sales data from a skincare business. It
 
 ---
 
-## 🧾 SQL Queries (20 Operations)
+## 🧾 SQL Queries (18 Operations)
 
 1. Preview dataset  
 2. Count total transactions  
@@ -67,8 +67,8 @@ The dataset is a cleaned version of real sales data from a skincare business. It
 ## 💡 Sample Query
 
 ```sql
-SELECT product_name, SUM(net_revenue) AS total_revenue
-FROM skincare_sales
-GROUP BY product_name
+SELECT product_name, SUM(`net revenue`) AS total_revenue
+FROM `skincare sql`
+GROUP BY `product name`
 ORDER BY total_revenue DESC
 LIMIT 5;
